@@ -5,11 +5,11 @@ int main()
 {
     std::cout<<"hello State Machine"<< std::endl;
     ACoolStateMachine stateMachine;
-    //Loop
+    
+    //Loop 
     while(!stateMachine.HasDone()) 
     {
         stateMachine.Update();
     }
-
     return 0;
 }

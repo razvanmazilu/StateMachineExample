@@ -3,6 +3,7 @@
 
 class ACoolStateMachine: public StateMachine<ACoolStateMachine>
 {
+
     State<ACoolStateMachine>*m_startState;
     State<ACoolStateMachine>*m_state1;
     State<ACoolStateMachine>*m_state2;
@@ -15,7 +16,7 @@ public:
     ~ACoolStateMachine();
 
     void Update();
-    void Done() { m_done = true; }
+    void Done() {m_done = true;}
     bool HasDone() {return m_done;}
 
     friend class StartState;
